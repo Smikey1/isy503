@@ -23,7 +23,6 @@ pydub==0.25.1
 Pygments==2.14.0
 pyparsing==3.0.9
 pyrsistent==0.19.3
-pywin32==306
 PyYAML==6.0
 pyzmq==25.0.2
 qrcode==7.3.1
