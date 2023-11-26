@@ -1,1 +1,153 @@
-<h1> Welcome to ISY NLP Project </h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Book Reviews Sentiment Analysis</title>
+    <style>
+      /* Base Styling */
+      body {
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        position: relative; /* Set body to relative positioning */
+      }
+      .container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 80%;
+        max-width: 500px;
+      }
+      h1 {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 28px;
+      }
+      label {
+        font-size: 20px;
+        color: #333;
+        display: block;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        resize: none;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      button {
+        background-color: #ff9900;
+        color: #fff;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease-in-out;
+      }
+      button:hover {
+        background-color: #ffc266;
+      }
+      h2 {
+        margin-top: 30px;
+        color: #333;
+        font-size: 24px;
+      }
+
+      /* New Styling */
+      .blue-green {
+        background-image: linear-gradient(to bottom right, #33ccff, #66ff99);
+      }
+      .yellow-heading {
+        color: #ffd700;
+        text-transform: uppercase;
+        background-image: linear-gradient(to right, #33ccff, #66ff99);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .info-container {
+        position: absolute;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        color: #0011ff;
+        font-size: 16px;
+        text-align: left;
+      }
+      .info-container.top-left {
+        top: 50px;
+        left: 80px;
+      }
+      .info-container.top-right {
+        top: 50px;
+        right: 80px;
+      }
+      .info-container.bottom-left {
+        bottom: 50px;
+        left: 80px;
+      }
+      .info-container.bottom-right {
+        bottom: 50px;
+        right: 80px;
+      }
+      .info-container strong {
+        font-weight: bold;
+      }
+      .info-container p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body class="blue-green">
+    <div class="container">
+      <h1 class="yellow-heading">Intelligent Systems (ISY503)</h1>
+      <form method="POST">
+        <label for="user_input">Enter your review:</label>
+        <textarea
+          name="user_input"
+          id="user_input"
+          rows="6"
+          placeholder="Start typing..."
+          required
+        ></textarea>
+        <button type="submit">Analyze</button>
+      </form>
+      {% if sentiment %}
+      <h2>Sentiment: {{ sentiment }}</h2>
+      {% endif %}
+    </div>
+    <div class="info-container top-left">
+      <strong>Developed by:</strong>
+      <p>Hira Datta Dhakal (A00108066)</p>
+      <p>Manpareet Singh (A00135206)</p>
+    </div>
+    <div class="info-container top-right">
+      <strong>Developed by:</strong>
+      <p>Hira Datta Dhakal (A00108066)</p>
+      <p>Manpareet Singh (A00135206)</p>
+    </div>
+    <div class="info-container bottom-left">
+      <strong>Developed by:</strong>
+      <p>Hira Datta Dhakal (A00108066)</p>
+      <p>Manpareet Singh (A00135206)</p>
+    </div>
+    <div class="info-container bottom-right">
+      <strong>Developed by:</strong>
+      <p>Hira Datta Dhakal (A00108066)</p>
+      <p>Manpareet Singh (A00135206)</p>
+    </div>
+  </body>
+</html>
